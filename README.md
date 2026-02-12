@@ -61,6 +61,13 @@ Agents are specialized AI workers that run in their own isolated context window.
 | **flyio-fastapi-deployment-expert** | Opus | Fly.io deployment for FastAPI — containerization, Supabase integration, scaling, CI/CD, monitoring |
 | **vercel-deployment-specialist** | Sonnet | Vercel platform — edge functions, middleware, deployment strategies, performance optimization |
 
+### Supabase
+
+| Agent | Model | Description |
+|---|---|---|
+| **supabase-connection-expert** | Sonnet | Supabase Postgres connection setup — Session Pooler for SQLAlchemy/psycopg2, Transaction Pooler for Prisma/pgbouncer, NestJS integration, compute tier sizing for 1000+ users |
+| **supabase-auth-linker** | Haiku | Supabase auth & security doc navigator — matches questions to the correct official documentation link (read-only) |
+
 ### Finance
 
 | Agent | Model | Description |
@@ -111,6 +118,8 @@ agents/
   riskfolio-expert.md           Portfolio optimization
   flyio-fastapi-deployment-expert.md   Fly.io deployment
   vercel-deployment-specialist.md      Vercel deployment
+  supabase-connection-expert.md  Supabase connection config (FastAPI/NestJS/Prisma)
+  supabase-auth-linker.md        Supabase auth & security doc links (read-only)
 skills/
   solid-principles/
     SKILL.md                    Core principles (injected into all coding agents)

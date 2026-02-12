@@ -40,6 +40,8 @@ Each `.md` file defines a specialized subagent. Install by copying to `~/.claude
 | `riskfolio-expert` | Riskfolio-Lib portfolio optimization | sonnet |
 | `flyio-fastapi-deployment-expert` | Fly.io deployment for FastAPI | opus |
 | `vercel-deployment-specialist` | Vercel deployment and edge functions | sonnet |
+| `supabase-auth-linker` | Supabase auth & security doc link retrieval | haiku |
+| `supabase-connection-expert` | Supabase connection setup for FastAPI/NestJS/Prisma at scale | sonnet |
 
 ### Agent frontmatter fields
 
@@ -66,6 +68,8 @@ delegate [domain] work to this agent automatically. Covers [capabilities]."
 - `ui-ux-designer` is the only read-only agent (tools: Read, Grep, Glob) — no skill injection needed
 - `python-pro` handles general Python + FastAPI; `fastapi-expert-agent` handles advanced production patterns with concrete code scaffolding
 - `frontend-developer` and `typescript-pro` are both Angular 21+ specific — frontend-developer for components/templates, typescript-pro for advanced type system work
+- `supabase-auth-linker` is a read-only reference agent (tools: Read, WebFetch, WebSearch, Grep, Glob) — returns documentation links, not code; uses haiku for fast responses
+- `supabase-connection-expert` handles Supabase connection configuration for all three stacks (FastAPI/SQLAlchemy, NestJS/Prisma/Zod, NestJS/TypeORM) — complements `supabase-auth-linker` which handles auth docs
 - Each coding agent has an "Integration with Other Agents" section listing only agents that exist in this repository
 
 ## Skills (`skills/`)
